@@ -1,13 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <body>
+      <header id="hero">
+        <section class="navBar">
+          <a href="#hero" class="logo">
+            <img src="images/logo.svg" alt="Logo" class="logo image" />
+          </a>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <button class="contact-btn">Contact</button>
+          </nav>
+          <h1 class="hero-text">We are creatives</h1>
+        </section>
+      </header>
+      <article id="about">
+        <section class="about-section">
+          <div class="about-text">
+            <h2 class="about-title">Transform your brand</h2>
+            <p class="description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="learn-more"> Learn more </a>
+          </div>
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt="brand-transform-img"
+            class="about-img"
+          />
+        </section>
+        <section class="about-section">
+          <div class="about-text">
+            <h2 class="about-title">Stand out to the right audience</h2>
+            <p class="description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="" class="learn-more"> Learn more </a>
+          </div>
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt="standout image"
+            class="about-img"
+          />
+        </section>
+      </article>
+      <article id="services">
+        <section>
+          <h2 class="services-title">Graphic design</h2>
+          <p class="services-description">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </section>
+        <section>
+          <h2 class="services-title">Photography</h2>
+          <p class="services-description">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </section>
+      </article>
+      <section id="testimonials"></section>
+      <section id="contact"></section>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/FevenSeyfu"
+            >Feven Seyfu</a
+          >.
+        </p>
+      </footer>
+    </body>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

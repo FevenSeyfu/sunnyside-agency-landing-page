@@ -21,17 +21,33 @@
     <body>
       <section id="hero">
         <header class="navBar">
-          <a href="#hero" class="logo">
-            <img src="images/logo.svg" alt="Logo" class="logo image" />
-          </a>
-          <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <button class="contact-btn">Contact</button>
+          <div>
+            <a href="#hero" class="logo">
+              <img src="images/logo.svg" alt="Logo" class="logo image" />
+            </a>
+            <button class="hamburger-menu inactive">
+              <img src="images/icon-hamburger.svg" alt="hamburger icon" />
+            </button>
+          </div>
+          <nav class="hidden">
+            <ul class="nav-lists">
+              <li class="nav-items">
+                <a href="#about">About</a>
+              </li>
+              <li class="nav-items">
+                <a href="#services">Services</a>
+              </li>
+              <li class="nav-items">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="nav-items">
+                <button class="contact-btn">Contact</button>
+              </li>
+            </ul>
           </nav>
         </header>
         <h1 class="hero-text">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="down arrow icon" class="down-arrow">
       </section>
       <section id="about">
         <article class="about-section">
@@ -128,10 +144,10 @@
       </section>
       <footer>
         <div class="image-slides">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
         </div>
         <div class="site-map">
           <a href="#">About</a>

@@ -1,3 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+body {
+  width: 100vw;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0.9, "WONK" 0;
+  text-align: center;
+}
+
+#hero {
+  width: 100vw;
+  height: 33.625em;
+  background-image: url("images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 24px 0 24px;
+}
+
+header {
+  height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+header > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.hamburger-menu {
+  background: none;
+  border: none;
+}
+
+.hamburger-menu.inactive {
+  opacity: 0.5;
+}
+
+.nav-lists.active {
+  position: absolute;
+  background: #fffcf8;
+  width: 329px;
+  height: 305px;
+  top: 106px;
+  left: 22px;
+  text-align: center;
+  padding: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.nav-lists::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 24px solid #fffcf8;
+  border-left: 24px solid transparent;
+  left: 305px;
+  top: -23px;
+}
+
+.nav-items {
+  list-style-type: none;
+}
+.nav-items > a {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1428571492433548px;
+  text-align: center;
+  color: #808397;
+  text-decoration: none;
+}
+
+.nav-items > button {
+  width: 140px;
+  height: 56px;
+  background: #fbd600;
+  border: #fbd600;
+  border-radius:56px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.1071428582072258px;
+  text-transform: uppercase;
+  color: #24303e;
+}
+
+.hero-text {
+  margin-top: 26.915%;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 49.32px;
+  letter-spacing: 6.25px;
+}
+
+/* style down arrow in hero section */
+.down-arrow {
+  margin: 3.25em 46% 0 46%;
+  width: 30px;
+  height: 21.6%;
+}
 .attribution {
   font-size: 13px;
   text-align: center;
@@ -8,7 +129,7 @@
 
 /* style desktop */
 @media only screen and (min-width: 768px) {
-  .attribution{
+  .attribution {
     font-size: 16px;
   }
 }

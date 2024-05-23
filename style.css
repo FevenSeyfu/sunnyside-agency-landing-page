@@ -88,7 +88,10 @@ header > div {
   color: #808397;
   text-decoration: none;
 }
-
+.nav-items > a:hover{
+  cursor: pointer;
+  color: black;
+}
 .nav-items > button {
   width: 140px;
   height: 56px;
@@ -105,6 +108,7 @@ header > div {
 .nav-items > button:hover {
   opacity: 0.75;
   color: white;
+  cursor: pointer;
 }
 .hero-text {
   margin-top: 26.915%;

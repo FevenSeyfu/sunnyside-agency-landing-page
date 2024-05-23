@@ -88,7 +88,7 @@ header > div {
   color: #808397;
   text-decoration: none;
 }
-.nav-items > a:hover{
+.nav-items > a:hover {
   cursor: pointer;
   color: black;
 }
@@ -125,6 +125,58 @@ header > div {
   margin: 3.25em 46% 0 46%;
   width: 30px;
   height: 21.6%;
+}
+
+.about-section > img {
+  height: auto;
+  width: 100vw;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 64px 24px;
+  gap: 32px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 39.46px;
+  letter-spacing: -0.22857142984867096px;
+  color: #24303e;
+}
+
+.about-text > .description {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.12857143580913544px;
+  color: #808397;
+}
+
+.about-text > a {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #24303e;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+.about-text > a::before {
+  position: absolute;
+  content: "";
+  background: #fad400;
+  width: 137px;
+  height: 10px;
+  top: 15px;
+  transform: translateX(-6%);
+  opacity: 0.25;
+  z-index: -1;
 }
 .attribution {
   font-size: 13px;

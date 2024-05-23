@@ -178,6 +178,46 @@ header > div {
   opacity: 0.25;
   z-index: -1;
 }
+
+/* services section */
+#services > article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 24px 59px 24px;
+  gap: 27px;
+  text-align: center;
+  color: #24554a;
+}
+
+#services > article:nth-child(1) {
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+#services > article:nth-child(2) {
+  background-image: url("./images/mobile/image-photography.jpg");
+}
+
+.services-title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 34.52px;
+  letter-spacing: -0.2px;
+}
+
+.services-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.11px;
+}
+
 .attribution {
   font-size: 13px;
   text-align: center;

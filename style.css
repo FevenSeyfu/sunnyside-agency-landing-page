@@ -50,7 +50,7 @@ header > div {
   opacity: 0.5;
 }
 
-.nav-lists.active {
+.MenuModal.active {
   position: absolute;
   background: #fffcf8;
   width: 329px;
@@ -63,7 +63,7 @@ header > div {
   flex-direction: column;
   gap: 32px;
 }
-.nav-lists::before {
+.MenuModal::before {
   position: absolute;
   content: "";
   display: inline-block;
@@ -92,9 +92,9 @@ header > div {
 .nav-items > button {
   width: 140px;
   height: 56px;
-  background: #fbd600;
+  background-color: #fbd600;
   border: #fbd600;
-  border-radius:56px;
+  border-radius: 56px;
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
@@ -102,7 +102,10 @@ header > div {
   text-transform: uppercase;
   color: #24303e;
 }
-
+.nav-items > button:hover {
+  opacity: 0.75;
+  color: white;
+}
 .hero-text {
   margin-top: 26.915%;
   color: #fff;

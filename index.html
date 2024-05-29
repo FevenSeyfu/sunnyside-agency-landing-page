@@ -23,13 +23,13 @@
         <header>
           <div>
             <a href="#hero" class="logo">
-              <img src="images/logo.svg" alt="Logo" class="logo image" />
+              <img src="./images/logo.svg" alt="Logo" class="logo image" />
             </a>
-            <button class="hamburger-menu ">
-              <img src="images/icon-hamburger.svg" alt="hamburger icon" />
+            <button class="hamburger-menu">
+              <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
             </button>
           </div>
-          <nav class="navBar ">
+          <nav class="navBar">
             <ul class="MenuModal hidden">
               <li class="nav-items">
                 <a href="#about">About</a>
@@ -47,12 +47,16 @@
           </nav>
         </header>
         <h1 class="hero-text">We are creatives</h1>
-        <img src="images/icon-arrow-down.svg" alt="down arrow icon" class="down-arrow">
+        <img
+          src="./images/icon-arrow-down.svg"
+          alt="down arrow icon"
+          class="down-arrow"
+        />
       </section>
       <section id="about">
         <article class="about-section">
           <img
-            src="images/mobile/image-transform.jpg"
+            src="./images/mobile/image-transform.jpg"
             alt="brand-transform-img"
             class="about-img"
           />
@@ -68,7 +72,7 @@
         </article>
         <article class="about-section">
           <img
-            src="images/mobile/image-stand-out.jpg"
+            src="./images/mobile/image-stand-out.jpg"
             alt="standout image"
             class="about-img"
           />
@@ -84,7 +88,7 @@
         </article>
       </section>
       <section id="services">
-        <article >
+        <article>
           <h2 class="services-title">Graphic design</h2>
           <p class="services-description">
             Great design makes you memorable. We deliver artwork that
@@ -101,74 +105,120 @@
         </article>
       </section>
       <section id="testimonials">
-        <h1>
-          Client testimonials
-          <div class="testimonials">
-            <article class="testimony">
-              <img
-                src="images/image-emily.jpg"
-                alt="Emily's image"
-                class="user-img"
-              />
-              <p class="testimony-text">
-                We put our trust in Sunnyside and they delivered, making sure
-                our needs were met and deadlines were always hit.
-              </p>
+        <h1>Client testimonials</h1>
+        <div class="testimonials">
+          <article class="testimony">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily's image"
+              class="user-img"
+            />
+            <p class="testimony-text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div>
               <h3 class="user-name">Emily R.</h3>
               <p class="user-role">Marketing Director</p>
-            </article>
-            <article class="testimony">
-              <img
-                src="images/image-thomas.jpg"
-                alt="Thomas's image"
-                class="user-img"
-              />
-              <p class="testimony-text">
-                Sunnyside’s enthusiasm coupled with their keen interest in our
-                brand’s success made it a satisfying and enjoyable experience.
-              </p>
+            </div>
+          </article>
+          <article class="testimony">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas's image"
+              class="user-img"
+            />
+            <p class="testimony-text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div>
               <h3 class="user-name">Thomas S.</h3>
               <p class="user-role">Chief Operating Officer</p>
-            </article>
-            <article class="testimony">
-              <img src="" alt="" class="user-img" />
-              <p class="testimony-text">
-                Incredible end result! Our sales increased over 400% when we
-                worked with Sunnyside. Highly recommended!
-              </p>
+            </div>
+          </article>
+          <article class="testimony">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie's image"
+              class="user-img"
+            />
+            <p class="testimony-text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div>
               <h3 class="user-name">Jennie F.</h3>
               <p class="user-role">Business Owner</p>
-            </article>
-          </div>
-        </h1>
+            </div>
+          </article>
+        </div>
       </section>
       <footer>
         <div class="image-slides">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/desktop/image-gallery-milkbottles.jpg"
+            />
+            <img
+              src="./images/mobile/image-gallery-milkbottles.jpg"
+              alt="gallery image of milkbottles"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/desktop/image-gallery-orange.jpg"
+            />
+            <img
+              src="./images/mobile/image-gallery-orange.jpg"
+              alt="gallery image of orange"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/desktop/image-gallery-cone.jpg"
+            />
+            <img
+              src="./images/mobile/image-gallery-cone.jpg"
+              alt="gallery image of cone"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/desktop/image-gallery-sugar-cubes.jpg"
+            />
+            <img
+              src="./images/mobile/image-gallery-sugar-cubes.jpg"
+              alt="gallery image of sugar cube"
+            />
+          </picture>
         </div>
-        <div class="site-map">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="social-links">
-          <a href="#">
-            <img src="images/icon-facebook.svg" alt="facebook icon" />
-          </a>
-          <a href="#">
-            <img src="images/icon-instagram.svg" alt="instagram icon" />
-          </a>
-          <a href="#">
-            <img src="images/icon-twitter.svg" alt="twitter icon" />
-          </a>
-          <a href="#">
-            <img src="images/icon-pinterest.svg" alt="pinterest icon" />
-          </a>
-        </div>
+        <div class="footer-socials">
+          <img src="./images/logo-footer.svg" alt="Logo" class="footer-logo">
+          <div class="site-map">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+          </div>
+          <div class="social-links">
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+            </a>
+          </div>
+       
         <section class="atttribute">
           <p class="attribution">
             Challenge by
@@ -182,6 +232,7 @@
             >.
           </p>
         </section>
+      </div>
       </footer>
     </body>
     <script type="module" src="/main.js"></script>

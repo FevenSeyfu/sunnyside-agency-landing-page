@@ -218,6 +218,117 @@ header > div {
   letter-spacing: -0.11px;
 }
 
+/* testimonials section */
+#testimonials {
+  padding-bottom: 88px;
+}
+#testimonials,
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+#testimonials > h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19.73px;
+  letter-spacing: 4px;
+  color: #a7aaad;
+  margin-top: 64px;
+}
+.testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  gap: 32px;
+}
+.testimony > .user-img {
+  height: 72px;
+  width: 72px;
+  border-radius: 100%;
+}
+.testimony > .testimony-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.12857143580913544px;
+  color: #5b636d;
+}
+.user-name {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22.19px;
+  letter-spacing: -0.12857143580913544px;
+  color: #24303e;
+}
+.user-role {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #a7aaad;
+}
+
+/* footers */
+
+.image-slides {
+  width: 100vw;
+  height: 375px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+}
+
+.image-slides img,
+picture {
+  width: 188px;
+  height: 188px;
+}
+
+.footer-socials {
+  background: #90d4c6;
+  width: 100vw;
+  height: 350px;
+  padding: 64px 39px 0 39px;
+}
+
+.footer-logo {
+  width: 170px;
+  height: 33px;
+}
+
+.site-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0 88px 0;
+}
+
+.site-map a {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.12857143580913544px;
+  color: #458d7e;
+  text-decoration: none;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  padding-left: 65px;
+  padding-bottom: 39px;
+}
+
+/* attribution */
 .attribution {
   font-size: 13px;
   text-align: center;
@@ -228,6 +339,10 @@ header > div {
 
 /* style desktop */
 @media only screen and (min-width: 768px) {
+  /* footer */
+  .image-slides {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .attribution {
     font-size: 16px;
   }

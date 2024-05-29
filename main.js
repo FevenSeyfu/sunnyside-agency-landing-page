@@ -2,28 +2,39 @@ import "./style.css";
 
 const hamburgerBtn = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".navBar");
-const mobileMenu = document.querySelector(".MenuModal");
+const menuModal = document.querySelector(".MenuModal");
 let isMenuOpen = false;
 
 const HandleOpenMenu = () => {
   // opening menu
   if (!isMenuOpen) {
     menu.classList.remove("hidden");
-    mobileMenu.classList.add("active");
+    menuModal.classList.add("active");
     hamburgerBtn.classList.add("inactive");
     isMenuOpen = true;
   }
 };
 const handleCloseMenu = () => {
   menu.classList.add("hidden");
-  mobileMenu.classList.remove("active");
+  menuModal.classList.remove("active");
   hamburgerBtn.classList.remove("inactive");
   isMenuOpen = false;
 };
-// hamburgerBtn.addEventListener("click", HandleOpenMenu);
+
+const handleResize = () =>{
+  if (window.innerWidth <= 768) {
+    hamburgerBtn.classList.remove('hidden');
+    menuModal.classList.add('hidden');
+  } else {
+    hamburgerBtn.classList.add('hidden');
+    menuModal.classList.remove('hidden');
+  }
+}
+window.addEventListener('load', handleResize);
+window.addEventListener('resize', handleResize);
 
 document.addEventListener("click", (e) => {
-  let clickInside = mobileMenu && mobileMenu.contains(e.target);
+  let clickInside = menuModal && menuModal.contains(e.target);
   if (!isMenuOpen) {
     hamburgerBtn.contains(e.target) && HandleOpenMenu();
   } else {
@@ -33,3 +44,5 @@ document.addEventListener("click", (e) => {
     }
   }
 });
+
+

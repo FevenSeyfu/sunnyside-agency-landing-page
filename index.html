@@ -30,7 +30,7 @@
             </button>
           </div>
           <nav class="navBar">
-            <ul class="MenuModal hidden">
+            <ul class="MenuModal">
               <li class="nav-items">
                 <a href="#about">About</a>
               </li>
@@ -55,11 +55,17 @@
       </section>
       <section id="about">
         <article class="about-section">
-          <img
-            src="./images/mobile/image-transform.jpg"
-            alt="brand-transform-img"
-            class="about-img"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/desktop/image-transform.jpg"
+            />
+            <img
+              src="./images/mobile/image-transform.jpg"
+              alt="brand-transform-img"
+              class="about-img"
+            />
+          </picture>
           <div class="about-text">
             <h2 class="about-title">Transform your brand</h2>
             <p class="description">
@@ -189,7 +195,7 @@
           <picture>
             <source
               media="(min-width: 768px)"
-              srcset="./images/desktop/image-gallery-sugar-cubes.jpg"
+              srcset="./images/desktop/image-gallery-sugarcubes.jpg"
             />
             <img
               src="./images/mobile/image-gallery-sugar-cubes.jpg"
@@ -198,7 +204,7 @@
           </picture>
         </div>
         <div class="footer-socials">
-          <img src="./images/logo-footer.svg" alt="Logo" class="footer-logo">
+          <img src="./images/logo-footer.svg" alt="Logo" class="footer-logo" />
           <div class="site-map">
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -218,21 +224,21 @@
               <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
             </a>
           </div>
-       
-        <section class="atttribute">
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by
-            <a href="https://www.frontendmentor.io/profile/FevenSeyfu"
-              >Feven Seyfu</a
-            >.
-          </p>
-        </section>
-      </div>
+
+          <section class="atttribute">
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by
+              <a href="https://www.frontendmentor.io/profile/FevenSeyfu"
+                >Feven Seyfu</a
+              >.
+            </p>
+          </section>
+        </div>
       </footer>
     </body>
     <script type="module" src="/main.js"></script>
